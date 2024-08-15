@@ -1,0 +1,116 @@
+#contactForm{
+    display: grid;
+    flex-wrap: wrap;
+    gap: 30px;
+    grid-template-columns: repeat(3, 200px);
+
+}
+button:hover{
+    cursor: pointer;
+    mix-blend-mode: difference;
+}
+
+.cro, .cro2{
+    position: absolute;
+    top: 10px;
+    right: 10px
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+    position: inherit;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: none;
+    width: 60px;
+    aspect-ratio: 2;
+    --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
+    background: 
+      var(--_g) 0%   50%,
+      var(--_g) 50%  50%,
+      var(--_g) 100% 50%;
+    background-size: calc(100%/3) 50%;
+    animation: l3 1s infinite linear;
+  }
+  @keyframes l3 {
+      20%{background-position:0%   0%, 50%  50%,100%  50%}
+      40%{background-position:0% 100%, 50%   0%,100%  50%}
+      60%{background-position:0%  50%, 50% 100%,100%   0%}
+      80%{background-position:0%  50%, 50%  50%,100% 100%}
+  }
+body{
+    background-color: rgb(33, 31, 31);
+    color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    padding-bottom: 100px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contactForm > div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    color: wheat;
+
+    
+}
+.number{
+    grid-column: 1 / span 3;
+    margin-inline: 20%;
+}
+#contactForm > div:nth-child(n + 5){
+    grid-column: 1 / span 3;
+}
+
+
+input, textarea{
+    width: 100%;
+    height: 30px;
+    font-size: 1.3rem;
+
+}
+textarea{
+    height: 100px;
+    width: 90%;
+    resize: none;
+}
+.name input{
+    font-size: 1.2rem
+}
+.overlay{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.365);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left:0;
+    z-index: 1000;
+}
+.popup{
+    position: fixed;
+    width: 400px;
+    height: 250px;
+    background-color: #fff;
+    top:50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 20px;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px
+}
+button[type=submit]{
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 1rem;
+
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find patient by name</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles2.css">
+</head>
+<body>
+    <div class="over">
+        <button class="crosshist" style="position: absolute; z-index: 10000; top: 10px; right: 40px">
+            X
+        </button>
+        <div class="history">
+           <div class="datesall"></div>
+            <div class="right-side">
+                <h1 class="heading">Loading...</h1>
+                <p class="changes"></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="overla">
+        <div class="newentry">
+            <button class="crossnew">X</button>
+            <h1>Patient Re-visitation</h1>
+            <p>For: <span id="change-name">Patient</span><span id="date"><input type="date" id="dates"></span></p>
+            <h3>Changes</h3>
+            <textarea id="newdetails"></textarea>
+            <button class="changesub submit">Submit Entry</button>
+        </div>
+    </div>
+    <div class="overl">
+        <div class="cover">
+            <div class="closebuts">
+                <button class="cross">x</button>
+            </div>
+            <div class="profile-page" size="A4">
+                <h1 class="title">Sufiyan Masood</h1>
+                <div class="prim-info">
+                    <div><span>Age: </span><span class="profileage">18</span></div>
+                    <div><span>Phone: </span><span class="profilenumber"></span></div>
+                    <div><span>Created on: </span><span class="profiledate">Today</span></div>
+                </div>
+                
+                <hr>
+                <div class="pagebody">
+                    <div class="Symptoms">
+                        <h1 class="pagetitle"></h1>
+                        <p class="content"></p>
+                    </div>
+                    <div class="Reports">
+                        <h1 class="pagetitle"></h1>
+                        <p class="content"></p>
+                    </div>
+                    <div class="Prescription">
+                        <h1 class="pagetitle"></h1>
+                        <p class="content"></p>
+                    </div>
+                    <div class="History">
+                        <h1 class="pagetitle"></h1>
+                        <p class="content"></p>
+                    </div>
+                    <div class="Past-history">
+                        <h1 class="pagetitle"></h1>
+                        <p class="content"></p>
+                    </div>
+                    <div class="Vital-signs">
+                        <h1 class="pagetitle"></h1>
+                        <p class="content"></p>
+                    </div>
+                    <div class="Extra-info">
+                        <h1 class="pagetitle"></h1>
+                        <p class="content"></p>
+                    </div>
+                    <div class="Private-info">
+                        <h1 class="pagetitle"></h1>
+                        <p class="content"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <div class="overlay2" style="display: none;">
+        <button class="cro2">x</button>
+        <div class="popup2">
+            <div class="loader"></div>
+        </div>
+    </div>
+    <div class="back" style="display: block;">
+        <button class="back"><a href="index.html">back</a></button>
+    </div>
+    <main> 
+        <input type="text" id="pt-name" placeholder="Search patient by name"  disabled>
+        <select id="searchoption" style="margin-left: 30px">
+            <option value="Name">By name</option>
+            <option value="Phone number">By phone#</option>
+        </select>
+    </main>
+    
+    <div class="container">
+        <div class="loader2"></div>
+    </div>
+
+   
+    
+    <script src="../dist/admin.bundle.js" type="module"></script>
+</body>
+</html>

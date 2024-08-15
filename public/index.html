@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@latest"></script>
+</head>
+<body>
+   
+    <nav>
+        <button class="find-patient">Find Patient</button>
+    </nav>
+    <h1>New Patient</h1>
+    <main>
+        <div class="overlay" style="display: none;">
+            <button class="cro">x</button>
+            <div class="popup">
+    
+                <div class="loader"></div>
+            </div>
+        </div>
+        <form id="contactForm">
+            <div class="name">
+                <label for="name">Patient Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="date">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+    
+            <div class="age">
+                <label for="Age">Age</label>
+                <input type="number" id="age" name="Age" required></input>
+            </div>
+    
+            <div class="number">
+                <label for="phone-number">Phone number</label>
+                <input type="tel" id="phone-number" name="phone-number" required></input>
+            </div>
+    
+            <div class="symptoms">
+                <label for="symptoms">Symptoms</label>
+                <textarea id="symptoms" name="symptoms" required></textarea>
+            </div>
+    
+            <div class="reports">
+                <label for="reports">Reports</label>
+                <textarea id="reports" name="reports" required></textarea>
+            </div>
+    
+            <div class="prescription">
+                <label for="prescription">Prescription</label>
+                <textarea id="prescription" name="prescription" required></textarea>
+            </div>
+    
+            <div class="history">
+                <label for="history">History</label>
+                <textarea id="history" name="history" required></textarea>
+            </div>
+    
+            <div class="past-history">
+                <label for="past-history">Past history</label>
+                <textarea id="past-history" name="past-history" required></textarea>
+            </div>
+    
+            <div class="vital-signs">
+                <label for="vital-signs">Vital signs</label>
+                <textarea id="vital-signs" name="vital-signs" required></textarea>
+            </div>
+    
+            <div class="extra-info">
+                <label for="extra-info">Extra info</label>
+                <textarea id="extra-info" name="extra-info" required></textarea>
+            </div>
+    
+            <div class="private-info">
+                <label for="private-info">Private info</label>
+                <textarea id="private-info" name="private-info" required></textarea>
+            </div>
+    
+    
+            <div><button type="submit" id="submitbut" class="submit">Submit</button></div>
+        </form>
+    </main>
+
+
+   
+    <script src="../dist/main.bundle.js"></script>
+</body>
+</html>
