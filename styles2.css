@@ -94,8 +94,8 @@ bottom: 0;
     }
 }
 div[size="A4"]{
- width: 21cm;
- height:29.7cm;
+ width: 16cm;
+ height:25.7cm;
  background-color: #fff;
 
 
@@ -120,12 +120,12 @@ display: none;
 }
 .cover{
     box-shadow: 2px 4px 16px black;
-    width: 21.7cm;
-    height: 31.8cm;
+    width: 680px;
+    height: 1000px;
     background-color: #a25555;
 
     position: relative;
-    top: 50%;
+    top: 48%;
     left: 50%;
     display: flex;
     justify-content: center;
