@@ -95,7 +95,7 @@ bottom: 0;
 }
 div[size="A4"]{
  width: 16cm;
- height:25.7cm;
+ height:22.7cm;
  background-color: #fff;
 
 
@@ -121,7 +121,7 @@ display: none;
 .cover{
     box-shadow: 2px 4px 16px black;
     width: 680px;
-    height: 1000px;
+    height: 900px;
     background-color: #a25555;
 
     position: relative;
@@ -153,15 +153,15 @@ transform: translate(-50%,-50%) scale(0.66);
 }
 .pagebody{
     display: grid;
-    gap: 40px;
-    padding: 40px;
+    gap: 20px;
+    padding: 20px;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
 }
 .pagebody > div{
     border: 1px solid black;
     border-radius: 20px;
-    padding: 30px;
+    padding: 10px;
 
 
 }
