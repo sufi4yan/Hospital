@@ -131,7 +131,7 @@ display: none;
     justify-content: center;
     align-items: center;
     animation: scale 200ms;
-transform: translate(-50%,-50%) scale(0.66);
+    transform: translate(-50%,-50%) scale(0.66);
 }
 .cross{
     position: absolute;

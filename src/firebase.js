@@ -32,7 +32,7 @@ export function createProfile(id, arr){
     const sequence = [`Symptoms`,`Reports`, `Prescription`, `History`, `Past history`, `Vital signs`, `Extra info`, `Private info`]
     for (let i = 0; i < sequence.length ; i++){
         document.querySelectorAll(`.pagetitle`)[i].textContent = sequence[i]
-        document.querySelectorAll(`.content`)[i].innerHTML = arr[id][sequence[i]].replaceAll(`\n`, `<br>`)|| `None`
+        document.querySelectorAll(`.content`)[i].innerHTML = arr[id][sequence[i]].replaceAll(`\n`, `<br>`)|| `N/A`
         num++
     }
     document.querySelectorAll(`.content`).forEach((field) => {

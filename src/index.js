@@ -78,7 +78,7 @@ submitbut.addEventListener('click',async (ev) => {
 let fine = true
     
 
-  if (!name || !age || !symptoms || !reports || !history || !pastHistory || !prescription || !vitalSigns){
+  if (!name || !age || !phoneNumber){
       fine = false
       popup.innerHTML = "Some of the fields were left empty"
       return
@@ -86,7 +86,7 @@ let fine = true
 
 const ids = await fetchPatientData()
 if (ids.some(names => names === name)){
-  popup.innerHTML = `Error occured: Resubmission`
+  popup.innerHTML = `Error occured: Patient with this exact name already exists.`
 } 
 else{
   const body = {
